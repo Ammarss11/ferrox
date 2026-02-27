@@ -338,6 +338,37 @@ If you want to test in a VM for development/research purposes, you need to disab
 
 The detection uses CPUID checks, MAC address prefixes, WMI queries, registry artifacts, and process scanning. For legitimate testing, modify the source to disable these checks.
 
+## Research References
+
+This project implements techniques documented in offensive security research. Key references:
+
+### Direct Syscalls (Hell's Gate)
+- [Hell's Gate original paper](https://github.com/am0nsec/HellsGate) by am0nsec and RtlMateusz
+- [RedOps: Exploring Hell's Gate](https://redops.at/en/blog/exploring-hells-gate) by Daniel Feichter
+- [Alice Climent-Pommeret's EDR Bypass guide](https://alice.climent-pommeret.red/posts/direct-syscalls-hells-halos-syswhispers2/)
+- [SysWhispers2](https://github.com/jthuraisamy/SysWhispers2) by Jackson Thuraisamy
+
+### API Hashing
+- [Malware API Hashing](https://www.ired.team/offensive-security/defense-evasion/windows-api-hashing-in-malware) by ired.team
+- [DJB2 Hash Algorithm](http://www.cse.yorku.ca/~oz/hash.html) by Daniel J. Bernstein
+
+### Process Injection
+- [Process Injection Techniques](https://www.elastic.co/blog/ten-process-injection-techniques-technical-survey-common-and-trending-process) by Elastic Security
+- [Reflective DLL Injection](https://github.com/stephenfewer/ReflectiveDLLInjection) by Stephen Fewer
+
+### Anti-VM Detection
+- [Pafish (Paranoid Fish)](https://github.com/a0rtega/pafish) by Alberto Ortega
+- [Al-Khaser](https://github.com/LordNoteworthy/al-khaser) - comprehensive anti-analysis checks
+- [CheckVM](https://github.com/clong/DetectionLab) detection techniques
+
+### Polymorphic Code
+- [Metamorphic Code Generation](https://www.usenix.org/legacy/events/woot09/tech/full_papers/mason.pdf) by Jon Mason
+- [Code Obfuscation Techniques](https://www.blackhat.com/presentations/bh-usa-03/bh-us-03-mehta/bh-us-03-mehta.pdf) by Vaibhav Mehta
+
+### String Encryption
+- [Compile-Time Encryption in Rust](https://github.com/frank2/litcrypt) by frank2
+- [Obfstr - Compile-time String Obfuscation](https://github.com/CasualX/obfstr) by CasualX
+
 ## Disclaimer
 
 This project is for educational and research purposes only. It demonstrates advanced malware techniques including:
